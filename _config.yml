@@ -1,3 +1,9 @@
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: "Meu Site Pessoal"
+description: "Um site pessoal simples usando GitHub Pages e Jekyll"
+author: "Seu Nome"
+email: "seu@email.com"
+
+theme: minima
+
+markdown: kramdown
+permalink: pretty
