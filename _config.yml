@@ -1,9 +1,0 @@
-title: "Meu Site Pessoal"
-description: "Um site pessoal simples usando GitHub Pages e Jekyll"
-author: "Seu Nome"
-email: "seu@email.com"
-
-theme: minima
-
-markdown: kramdown
-permalink: pretty
