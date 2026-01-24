@@ -51,7 +51,7 @@ body {
 
 /* Hover effect on social media icons */
 .social-icons a:hover {
-    color: #b0c4de;
+    color: #1cec7a;
 }
 
 /* Button styling */
@@ -69,5 +69,5 @@ body {
 /* Hover state for button */
 .btn:hover {
     background-color: #ffffff;
-    color: #292E49;
+    color: #fa0b0b;
 }
