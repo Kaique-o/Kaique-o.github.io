@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#2a0406"/>
+      <stop offset="1" stop-color="#0b0b0b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0" stop-color="#b9132b" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <!-- simple "curtains" -->
+  <g opacity="0.9">
+    <path d="M0,0 C120,260 120,640 0,900 L240,900 C320,640 320,260 240,0 Z" fill="#7a0a14"/>
+    <path d="M220,0 C340,240 340,660 220,900 L460,900 C540,660 540,240 460,0 Z" fill="#5f0710"/>
+    <path d="M440,0 C560,240 560,660 440,900 L680,900 C760,660 760,240 680,0 Z" fill="#7a0a14"/>
+    <path d="M660,0 C780,240 780,660 660,900 L900,900 C980,660 980,240 900,0 Z" fill="#5f0710"/>
+    <path d="M880,0 C1000,240 1000,660 880,900 L1120,900 C1200,660 1200,240 1120,0 Z" fill="#7a0a14"/>
+    <path d="M1100,0 C1220,240 1220,660 1100,900 L1340,900 C1420,660 1420,240 1340,0 Z" fill="#5f0710"/>
+    <path d="M1320,0 C1440,240 1440,660 1320,900 L1600,900 L1600,0 Z" fill="#7a0a14"/>
+  </g>
+</svg>
