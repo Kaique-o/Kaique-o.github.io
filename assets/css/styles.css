@@ -118,25 +118,40 @@ body::before {
   }
 }
 
-/* Site Header (Redesigned) */
+/* Site Header */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  background: rgba(7, 8, 8, 0.42);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(7, 8, 8, 0.45);
   border-bottom: 1px solid var(--border-glass);
+  transition: background 0.3s;
 }
 
 .header-inner {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 18px 24px;
+  padding: 20px 24px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: var(--color-text-main);
+  text-transform: lowercase;
+  transition: opacity 0.2s;
+}
+
+.brand-logo:hover {
+  opacity: 0.7;
 }
 
 .nav {
@@ -195,7 +210,7 @@ img {
   z-index: 9999;
 }
 
-/* --- HERO VIDEO --- */
+/* --- HERO VIDEO & SCROLL HINT --- */
 .hero-video {
   position: relative;
   height: 100vh;
@@ -221,26 +236,67 @@ img {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(7, 8, 8, 0.4), rgba(7, 8, 8, 0.8));
+  background: linear-gradient(to bottom, rgba(7, 8, 8, 0.2), rgba(7, 8, 8, 0.8));
   z-index: 1;
 }
 
-.hero-center-content {
-  position: relative;
+.scroll-hint {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
 }
 
-.logo-text {
-  font-size: clamp(48px, 10vw, 120px);
-  font-weight: 800;
-  letter-spacing: -0.05em;
-  color: #fff;
+.scroll-hint:hover {
+  opacity: 1;
 }
 
-.logo-text span {
+.scroll-mouse {
+  width: 22px;
+  height: 36px;
+  border: 2px solid var(--color-text-soft);
+  border-radius: 12px;
+  position: relative;
+}
+
+.scroll-mouse::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 8px;
+  background: var(--color-accent);
+  border-radius: 2px;
+  animation: scrollAnim 2s ease-in-out infinite;
+}
+
+.scroll-text {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
   color: var(--color-text-soft);
-  font-weight: 400;
+}
+
+@keyframes scrollAnim {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, 8px);
+    opacity: 0;
+  }
 }
 
 /* --- PHOTO GRID 2X2 --- */
@@ -326,22 +382,25 @@ img {
   margin-bottom: 40px;
 }
 
-/* --- RECENT LIST & BANNER --- */
+/* --- RECENT LIST & BANNER REFINEMENT --- */
 .recent-list {
   display: flex;
   flex-direction: column;
   gap: 1px;
   background: var(--border-glass);
   margin-top: 40px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .recent-item {
   display: grid;
   grid-template-columns: 120px 1fr auto;
-  padding: 24px;
+  padding: 28px 32px;
   background: var(--color-bg-primary);
   transition: background 0.2s;
   align-items: center;
+  gap: 24px;
 }
 
 .recent-item:hover {
@@ -355,22 +414,59 @@ img {
 }
 
 .recent-item .item-title {
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.02em;
 }
 
 .recent-item .category {
   font-size: 12px;
   text-transform: uppercase;
   color: var(--color-accent);
+  font-weight: 800;
 }
 
 .contact-banner {
   background: linear-gradient(135deg, var(--color-bg-primary), #111);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-large);
-  padding: 60px;
+  padding: 80px 60px;
   text-align: center;
+}
+
+/* --- REVEAL ANIMATIONS --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.reveal-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  animation-delay: 0.2s;
+}
+
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base structural fixes */
+section {
+  padding: 120px 0;
+}
+
+.photo-grid-section {
+  padding: 0;
+}
+
+.featured-article-fs {
+  padding: 0;
 }
 
 /* --- BUTTONS (GLASS) --- */
