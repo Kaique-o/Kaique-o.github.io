@@ -1,26 +1,29 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="grade visual com filtros e busca. albums, cinema e artigos em formato masonry responsivo." />
-<meta name="theme-color" content="#0b0b0b" />
-<meta name="robots" content="index,follow,max-image-preview:large" />
-<link rel="canonical" href="https://example.com/archive/" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="grade visual com filtros e busca. albums, cinema e artigos em formato masonry responsivo." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://example.com/archive/" />
 
-<!-- Open Graph / Twitter -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Archive — Kaique Oliveira" />
-<meta property="og:description" content="grade visual com filtros e busca. albums, cinema e artigos em formato masonry responsivo." />
-<meta property="og:url" content="https://example.com/archive/" />
-<meta property="og:image" content="https://example.com/assets/img/hero-curtain.svg" />
-<meta name="twitter:card" content="summary_large_image" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Archive — Kaique Oliveira" />
+  <meta property="og:description"
+    content="grade visual com filtros e busca. albums, cinema e artigos em formato masonry responsivo." />
+  <meta property="og:url" content="https://example.com/archive/" />
+  <meta property="og:image" content="https://example.com/assets/img/hero-curtain.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="../assets/css/styles.css" />
-<script>document.documentElement.classList.add('no-js');</script>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>document.documentElement.classList.add('no-js');</script>
 
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -40,324 +43,351 @@
 }
 </script>
 
-<title>Archive — Kaique Oliveira</title>
+  <title>Archive — Kaique Oliveira</title>
 </head>
 
 <body id="top">
-<a class="skip-link" href="#content">pular pro conteudo</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="../index.html" aria-label="Kaique Oliveira - início">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span class="brand-name">Grain <span>Archive</span></span>
-    </a>
-
-    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
-      menu
-    </button>
-
-    <nav id="primary-nav" class="nav" data-nav aria-label="navegação principal">
-      <a class="pill--orange" href="../index.html">inicio</a>
-      <a class="pill--green" href="../archive/index.html">archive</a>
-      <a class="pill--blue" href="../about/index.html">about</a>
-    </nav>
+  <!-- Background Effects -->
+  <div class="bg-anim" aria-hidden="true">
+    <div class="glow glow--1"></div>
+    <div class="glow glow--2"></div>
   </div>
-</header>
 
-<main id="content" class="section" data-archive>
-  <div class="container">
-    <p class="breadcrumb"><a href="../index.html">inicio</a> / <strong>archive</strong></p>
-    <h1 class="section-title" style="margin-top: var(--s-2);">Archive</h1>
-    <p class="section-sub">
-      navegação rápida: busca por texto, filtros por tipo, e grid em colunas (masonry) que segura bem em mobile e desktop.
-      tudo pré-renderizado pra seo, com js só pra melhorar.
-    </p>
-
-    <div class="toolbar">
-      <div class="search">
-        <label class="visually-hidden" for="search">buscar</label>
-        <input id="search" type="search" inputmode="search" placeholder="buscar no archive (ex: fuzz, cinema, 2025…)" autocomplete="off" data-search />
-      </div>
-
-      <div class="filters" aria-label="filtros">
-        <button class="chip" type="button" aria-pressed="true" data-chip="all">tudo</button>
-        <button class="chip" type="button" aria-pressed="false" data-chip="albums">albums</button>
-        <button class="chip" type="button" aria-pressed="false" data-chip="articles">artigos</button>
-        <button class="chip" type="button" aria-pressed="false" data-chip="cinema">cinema</button>
-      </div>
+  <a class="skip-link" href="#content">pular pro conteudo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-logo" href="../index.html" aria-label="Kaique Oli - início">
+        Kaique Oli
+      </a>
+      <nav id="primary-nav" class="nav" aria-label="navegação principal">
+        <a href="../index.html">home</a>
+        <a href="../about/index.html">sobre</a>
+        <a href="../about/index.html#contato">contatos</a>
+      </nav>
     </div>
+  </header>
 
-    <p class="note js-only" style="margin: 0 0 var(--s-3);">
-      dica: no desktop, o layout vira 3 colunas. em mobile, 1 coluna com cards grandes (tap target bom).
-    </p>
-
-    <div class="masonry" aria-label="itens do archive">
-
-      <div class="masonry-item" data-card data-tags="albums" data-haystack="album False Memory camadas frias e ruído bonito. 2025-08-01 albums">
-        <article class="card">
-          <a href="../archive/index.html">
-            <div class="card-media" style="aspect-ratio: 4 / 3;">
-              <img src="../assets/img/cover-featured.svg" alt="thumbnail de False Memory" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <div class="card-eyebrow">
-                <span class="tag tag--green">album</span>
-                <span>2025-08-01</span>
-              </div>
-              <h3 class="card-title">False Memory</h3>
-              <p class="card-excerpt">camadas frias e ruído bonito.</p>
-              <div class="card-footer">
-                <span>albums</span>
-                <span>abrir →</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    
-      <div class="masonry-item" data-card data-tags="articles" data-haystack="article Drowning in Delay: The Revival of Fuzz Worship delay como memória em fita. 2025-08-04 articles">
-        <article class="card">
-          <a href="../article/drowning-in-delay-the-revival-of-fuzz-worship/index.html">
-            <div class="card-media" style="aspect-ratio: 4 / 3;">
-              <img src="../assets/img/article-hero.svg" alt="thumbnail de Drowning in Delay: The Revival of Fuzz Worship" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <div class="card-eyebrow">
-                <span class="tag tag--orange">article</span>
-                <span>2025-08-04</span>
-              </div>
-              <h3 class="card-title">Drowning in Delay: The Revival of Fuzz Worship</h3>
-              <p class="card-excerpt">delay como memória em fita.</p>
-              <div class="card-footer">
-                <span>articles</span>
-                <span>abrir →</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    
-      <div class="masonry-item" data-card data-tags="cinema" data-haystack="cinema Cinema Selects — Week 32 quatro filmes, zero filler. 2025-08-07 cinema">
-        <article class="card">
-          <a href="../archive/index.html">
-            <div class="card-media" style="aspect-ratio: 4 / 3;">
-              <img src="../assets/img/hero-curtain.svg" alt="thumbnail de Cinema Selects — Week 32" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <div class="card-eyebrow">
-                <span class="tag tag--blue">cinema</span>
-                <span>2025-08-07</span>
-              </div>
-              <h3 class="card-title">Cinema Selects — Week 32</h3>
-              <p class="card-excerpt">quatro filmes, zero filler.</p>
-              <div class="card-footer">
-                <span>cinema</span>
-                <span>abrir →</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    
-      <div class="masonry-item" data-card data-tags="albums" data-haystack="album Blue Static drone com brilho metálico. 2025-07-18 albums">
-        <article class="card">
-          <a href="../archive/index.html">
-            <div class="card-media" style="aspect-ratio: 4 / 3;">
-              <img src="../assets/img/cover-featured.svg" alt="thumbnail de Blue Static" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <div class="card-eyebrow">
-                <span class="tag tag--green">album</span>
-                <span>2025-07-18</span>
-              </div>
-              <h3 class="card-title">Blue Static</h3>
-              <p class="card-excerpt">drone com brilho metálico.</p>
-              <div class="card-footer">
-                <span>albums</span>
-                <span>abrir →</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    
-      <div class="masonry-item" data-card data-tags="articles" data-haystack="article Field Notes: Tape Hiss as Texture quando o defeito vira assinatura. 2025-07-02 articles">
-        <article class="card">
-          <a href="../article/drowning-in-delay-the-revival-of-fuzz-worship/index.html#notes">
-            <div class="card-media" style="aspect-ratio: 4 / 3;">
-              <img src="../assets/img/article-hero.svg" alt="thumbnail de Field Notes: Tape Hiss as Texture" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <div class="card-eyebrow">
-                <span class="tag tag--orange">article</span>
-                <span>2025-07-02</span>
-              </div>
-              <h3 class="card-title">Field Notes: Tape Hiss as Texture</h3>
-              <p class="card-excerpt">quando o defeito vira assinatura.</p>
-              <div class="card-footer">
-                <span>articles</span>
-                <span>abrir →</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    
-      <div class="masonry-item" data-card data-tags="cinema" data-haystack="cinema Frames in Grain lista de fotografia suja e linda. 2025-06-28 cinema">
-        <article class="card">
-          <a href="../archive/index.html">
-            <div class="card-media" style="aspect-ratio: 4 / 3;">
-              <img src="../assets/img/hero-curtain.svg" alt="thumbnail de Frames in Grain" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <div class="card-eyebrow">
-                <span class="tag tag--blue">cinema</span>
-                <span>2025-06-28</span>
-              </div>
-              <h3 class="card-title">Frames in Grain</h3>
-              <p class="card-excerpt">lista de fotografia suja e linda.</p>
-              <div class="card-footer">
-                <span>cinema</span>
-                <span>abrir →</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    
-      <div class="masonry-item" data-card data-tags="albums" data-haystack="album Night Corridor ambient com sombra e espaço. 2025-06-11 albums">
-        <article class="card">
-          <a href="../archive/index.html">
-            <div class="card-media" style="aspect-ratio: 4 / 3;">
-              <img src="../assets/img/cover-featured.svg" alt="thumbnail de Night Corridor" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <div class="card-eyebrow">
-                <span class="tag tag--green">album</span>
-                <span>2025-06-11</span>
-              </div>
-              <h3 class="card-title">Night Corridor</h3>
-              <p class="card-excerpt">ambient com sombra e espaço.</p>
-              <div class="card-footer">
-                <span>albums</span>
-                <span>abrir →</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    
-      <div class="masonry-item" data-card data-tags="albums" data-haystack="album Orange Reverie loops curtos, calor longo. 2025-05-30 albums">
-        <article class="card">
-          <a href="../archive/index.html">
-            <div class="card-media" style="aspect-ratio: 4 / 3;">
-              <img src="../assets/img/cover-featured.svg" alt="thumbnail de Orange Reverie" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <div class="card-eyebrow">
-                <span class="tag tag--green">album</span>
-                <span>2025-05-30</span>
-              </div>
-              <h3 class="card-title">Orange Reverie</h3>
-              <p class="card-excerpt">loops curtos, calor longo.</p>
-              <div class="card-footer">
-                <span>albums</span>
-                <span>abrir →</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    
-      <div class="masonry-item" data-card data-tags="articles" data-haystack="article Minimal Gear, Maximum Mood setup enxuto, resultado grande. 2025-05-12 articles">
-        <article class="card">
-          <a href="../article/drowning-in-delay-the-revival-of-fuzz-worship/index.html#setup">
-            <div class="card-media" style="aspect-ratio: 4 / 3;">
-              <img src="../assets/img/article-hero.svg" alt="thumbnail de Minimal Gear, Maximum Mood" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <div class="card-eyebrow">
-                <span class="tag tag--orange">article</span>
-                <span>2025-05-12</span>
-              </div>
-              <h3 class="card-title">Minimal Gear, Maximum Mood</h3>
-              <p class="card-excerpt">setup enxuto, resultado grande.</p>
-              <div class="card-footer">
-                <span>articles</span>
-                <span>abrir →</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    
-      <div class="masonry-item" data-card data-tags="cinema" data-haystack="cinema Night Walkers movimento, neon, silêncio. 2025-05-04 cinema">
-        <article class="card">
-          <a href="../archive/index.html">
-            <div class="card-media" style="aspect-ratio: 4 / 3;">
-              <img src="../assets/img/hero-curtain.svg" alt="thumbnail de Night Walkers" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <div class="card-eyebrow">
-                <span class="tag tag--blue">cinema</span>
-                <span>2025-05-04</span>
-              </div>
-              <h3 class="card-title">Night Walkers</h3>
-              <p class="card-excerpt">movimento, neon, silêncio.</p>
-              <div class="card-footer">
-                <span>cinema</span>
-                <span>abrir →</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    
-    </div>
-
-    <div data-empty hidden class="note" style="margin-top: var(--s-3);">
-      nada encontrado. tenta outro termo ou limpa o filtro.
-    </div>
-
-    <div style="margin-top: var(--s-4);">
-      <h2 class="section-title" style="font-size: clamp(20px, 2vw, 28px);">atalhos</h2>
-      <p class="section-sub" style="margin-bottom: var(--s-2);">
-        ancoras só pra bater com o print e facilitar navegação/seo interno.
+  <main id="content" class="section reveal" data-archive>
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">inicio</a> / <strong>archive</strong></p>
+      <h1 class="section-title" style="margin-top: var(--s-2);">Archive</h1>
+      <p class="section-sub">
+        navegação rápida: busca por texto, filtros por tipo, e grid em colunas (masonry) que segura bem em mobile e
+        desktop.
+        tudo pré-renderizado pra seo, com js só pra melhorar.
       </p>
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-        <a class="btn" href="#albums" id="albums">albums</a>
-        <a class="btn" href="#articles" id="articles">artigos</a>
-        <a class="btn" href="#cinema" id="cinema">cinema</a>
+
+      <div class="toolbar">
+        <div class="search">
+          <label class="visually-hidden" for="search">buscar</label>
+          <input id="search" type="search" inputmode="search" placeholder="buscar no archive (ex: fuzz, cinema, 2025…)"
+            autocomplete="off" data-search />
+        </div>
+
+        <div class="filters" aria-label="filtros">
+          <button class="chip" type="button" aria-pressed="true" data-chip="all">tudo</button>
+          <button class="chip" type="button" aria-pressed="false" data-chip="albums">albums</button>
+          <button class="chip" type="button" aria-pressed="false" data-chip="articles">artigos</button>
+          <button class="chip" type="button" aria-pressed="false" data-chip="cinema">cinema</button>
+        </div>
+      </div>
+
+      <p class="note js-only" style="margin: 0 0 var(--s-3);">
+        dica: no desktop, o layout vira 3 colunas. em mobile, 1 coluna com cards grandes (tap target bom).
+      </p>
+
+      <div class="masonry" aria-label="itens do archive">
+
+        <div class="masonry-item" data-card data-tags="albums"
+          data-haystack="album False Memory camadas frias e ruído bonito. 2025-08-01 albums">
+          <article class="card">
+            <a href="../archive/index.html">
+              <div class="card-media" style="aspect-ratio: 4 / 3;">
+                <img src="../assets/img/cover-featured.svg" alt="thumbnail de False Memory" loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="card-body">
+                <div class="card-eyebrow">
+                  <span class="tag tag--green">album</span>
+                  <span>2025-08-01</span>
+                </div>
+                <h3 class="card-title">False Memory</h3>
+                <p class="card-excerpt">camadas frias e ruído bonito.</p>
+                <div class="card-footer">
+                  <span>albums</span>
+                  <span>abrir →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="masonry-item" data-card data-tags="articles"
+          data-haystack="article Drowning in Delay: The Revival of Fuzz Worship delay como memória em fita. 2025-08-04 articles">
+          <article class="card">
+            <a href="../article/drowning-in-delay-the-revival-of-fuzz-worship/index.html">
+              <div class="card-media" style="aspect-ratio: 4 / 3;">
+                <img src="../assets/img/article-hero.svg"
+                  alt="thumbnail de Drowning in Delay: The Revival of Fuzz Worship" loading="lazy" decoding="async" />
+              </div>
+              <div class="card-body">
+                <div class="card-eyebrow">
+                  <span class="tag tag--orange">article</span>
+                  <span>2025-08-04</span>
+                </div>
+                <h3 class="card-title">Drowning in Delay: The Revival of Fuzz Worship</h3>
+                <p class="card-excerpt">delay como memória em fita.</p>
+                <div class="card-footer">
+                  <span>articles</span>
+                  <span>abrir →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="masonry-item" data-card data-tags="cinema"
+          data-haystack="cinema Cinema Selects — Week 32 quatro filmes, zero filler. 2025-08-07 cinema">
+          <article class="card">
+            <a href="../archive/index.html">
+              <div class="card-media" style="aspect-ratio: 4 / 3;">
+                <img src="../assets/img/hero-curtain.svg" alt="thumbnail de Cinema Selects — Week 32" loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="card-body">
+                <div class="card-eyebrow">
+                  <span class="tag tag--blue">cinema</span>
+                  <span>2025-08-07</span>
+                </div>
+                <h3 class="card-title">Cinema Selects — Week 32</h3>
+                <p class="card-excerpt">quatro filmes, zero filler.</p>
+                <div class="card-footer">
+                  <span>cinema</span>
+                  <span>abrir →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="masonry-item" data-card data-tags="albums"
+          data-haystack="album Blue Static drone com brilho metálico. 2025-07-18 albums">
+          <article class="card">
+            <a href="../archive/index.html">
+              <div class="card-media" style="aspect-ratio: 4 / 3;">
+                <img src="../assets/img/cover-featured.svg" alt="thumbnail de Blue Static" loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="card-body">
+                <div class="card-eyebrow">
+                  <span class="tag tag--green">album</span>
+                  <span>2025-07-18</span>
+                </div>
+                <h3 class="card-title">Blue Static</h3>
+                <p class="card-excerpt">drone com brilho metálico.</p>
+                <div class="card-footer">
+                  <span>albums</span>
+                  <span>abrir →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="masonry-item" data-card data-tags="articles"
+          data-haystack="article Field Notes: Tape Hiss as Texture quando o defeito vira assinatura. 2025-07-02 articles">
+          <article class="card">
+            <a href="../article/drowning-in-delay-the-revival-of-fuzz-worship/index.html#notes">
+              <div class="card-media" style="aspect-ratio: 4 / 3;">
+                <img src="../assets/img/article-hero.svg" alt="thumbnail de Field Notes: Tape Hiss as Texture"
+                  loading="lazy" decoding="async" />
+              </div>
+              <div class="card-body">
+                <div class="card-eyebrow">
+                  <span class="tag tag--orange">article</span>
+                  <span>2025-07-02</span>
+                </div>
+                <h3 class="card-title">Field Notes: Tape Hiss as Texture</h3>
+                <p class="card-excerpt">quando o defeito vira assinatura.</p>
+                <div class="card-footer">
+                  <span>articles</span>
+                  <span>abrir →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="masonry-item" data-card data-tags="cinema"
+          data-haystack="cinema Frames in Grain lista de fotografia suja e linda. 2025-06-28 cinema">
+          <article class="card">
+            <a href="../archive/index.html">
+              <div class="card-media" style="aspect-ratio: 4 / 3;">
+                <img src="../assets/img/hero-curtain.svg" alt="thumbnail de Frames in Grain" loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="card-body">
+                <div class="card-eyebrow">
+                  <span class="tag tag--blue">cinema</span>
+                  <span>2025-06-28</span>
+                </div>
+                <h3 class="card-title">Frames in Grain</h3>
+                <p class="card-excerpt">lista de fotografia suja e linda.</p>
+                <div class="card-footer">
+                  <span>cinema</span>
+                  <span>abrir →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="masonry-item" data-card data-tags="albums"
+          data-haystack="album Night Corridor ambient com sombra e espaço. 2025-06-11 albums">
+          <article class="card">
+            <a href="../archive/index.html">
+              <div class="card-media" style="aspect-ratio: 4 / 3;">
+                <img src="../assets/img/cover-featured.svg" alt="thumbnail de Night Corridor" loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="card-body">
+                <div class="card-eyebrow">
+                  <span class="tag tag--green">album</span>
+                  <span>2025-06-11</span>
+                </div>
+                <h3 class="card-title">Night Corridor</h3>
+                <p class="card-excerpt">ambient com sombra e espaço.</p>
+                <div class="card-footer">
+                  <span>albums</span>
+                  <span>abrir →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="masonry-item" data-card data-tags="albums"
+          data-haystack="album Orange Reverie loops curtos, calor longo. 2025-05-30 albums">
+          <article class="card">
+            <a href="../archive/index.html">
+              <div class="card-media" style="aspect-ratio: 4 / 3;">
+                <img src="../assets/img/cover-featured.svg" alt="thumbnail de Orange Reverie" loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="card-body">
+                <div class="card-eyebrow">
+                  <span class="tag tag--green">album</span>
+                  <span>2025-05-30</span>
+                </div>
+                <h3 class="card-title">Orange Reverie</h3>
+                <p class="card-excerpt">loops curtos, calor longo.</p>
+                <div class="card-footer">
+                  <span>albums</span>
+                  <span>abrir →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="masonry-item" data-card data-tags="articles"
+          data-haystack="article Minimal Gear, Maximum Mood setup enxuto, resultado grande. 2025-05-12 articles">
+          <article class="card">
+            <a href="../article/drowning-in-delay-the-revival-of-fuzz-worship/index.html#setup">
+              <div class="card-media" style="aspect-ratio: 4 / 3;">
+                <img src="../assets/img/article-hero.svg" alt="thumbnail de Minimal Gear, Maximum Mood" loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="card-body">
+                <div class="card-eyebrow">
+                  <span class="tag tag--orange">article</span>
+                  <span>2025-05-12</span>
+                </div>
+                <h3 class="card-title">Minimal Gear, Maximum Mood</h3>
+                <p class="card-excerpt">setup enxuto, resultado grande.</p>
+                <div class="card-footer">
+                  <span>articles</span>
+                  <span>abrir →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="masonry-item" data-card data-tags="cinema"
+          data-haystack="cinema Night Walkers movimento, neon, silêncio. 2025-05-04 cinema">
+          <article class="card">
+            <a href="../archive/index.html">
+              <div class="card-media" style="aspect-ratio: 4 / 3;">
+                <img src="../assets/img/hero-curtain.svg" alt="thumbnail de Night Walkers" loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="card-body">
+                <div class="card-eyebrow">
+                  <span class="tag tag--blue">cinema</span>
+                  <span>2025-05-04</span>
+                </div>
+                <h3 class="card-title">Night Walkers</h3>
+                <p class="card-excerpt">movimento, neon, silêncio.</p>
+                <div class="card-footer">
+                  <span>cinema</span>
+                  <span>abrir →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+      </div>
+
+      <div data-empty hidden class="note" style="margin-top: var(--s-3);">
+        nada encontrado. tenta outro termo ou limpa o filtro.
+      </div>
+
+      <div style="margin-top: var(--s-4);">
+        <h2 class="section-title" style="font-size: clamp(20px, 2vw, 28px);">atalhos</h2>
+        <p class="section-sub" style="margin-bottom: var(--s-2);">
+          ancoras só pra bater com o print e facilitar navegação/seo interno.
+        </p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn" href="#albums" id="albums">albums</a>
+          <a class="btn" href="#articles" id="articles">artigos</a>
+          <a class="btn" href="#cinema" id="cinema">cinema</a>
+        </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div>
-      <div class="brand-name" style="font-weight:900; letter-spacing:-0.04em;">Kaique Oliveira</div>
-      <div style="color:rgba(255,255,255,.65); margin-top:6px;">© <span data-year></span> — curadoria, música e cinema</div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand-name" style="font-weight:900; letter-spacing:-0.04em;">Kaique Oli</div>
+        <div style="color:rgba(255,255,255,.45); margin-top:6px; font-size: 12px;">© <span data-year></span> — v1.0
+          design system . all rights reserved</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/kaique-oliveira-24b710269/">linkedin</a>
+        <a href="https://github.com/Kaique-o">github</a>
+        <a href="https://www.instagram.com/kaique__o">instagram</a>
+        <span>·</span>
+        <a href="/privacy">privacidade</a>
+        <a href="/cookies">cookies</a>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="../archive/index.html">archive</a>
-      <a href="../about/index.html">about</a>
-      <a href="#top">voltar ao topo</a>
-    </div>
-  </div>
-</footer>
-<script src="../assets/js/main.js" defer></script>
-<script src="../assets/js/archive.js" defer></script>
+  </footer>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/archive.js" defer></script>
 
-<!-- UX: atalho "/" foca na busca -->
-<script>
-  document.addEventListener('keydown', (e) => {
-    if (e.key === '/' && !/input|textarea/i.test(document.activeElement?.tagName || '')) {
-      e.preventDefault();
-      const el = document.querySelector('[data-search]');
-      if (el) el.focus();
-    }
-  });
-</script>
+  <!-- UX: atalho "/" foca na busca -->
+  <script>
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/' && !/input|textarea/i.test(document.activeElement?.tagName || '')) {
+        e.preventDefault();
+        const el = document.querySelector('[data-search]');
+        if (el) el.focus();
+      }
+    });
+  </script>
 </body>
+
 </html>

@@ -1,26 +1,29 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="sobre o projeto, filosofia de curadoria, e contato. layout responsivo em blocos como no print." />
-<meta name="theme-color" content="#0b0b0b" />
-<meta name="robots" content="index,follow,max-image-preview:large" />
-<link rel="canonical" href="https://example.com/about/" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="sobre o projeto, filosofia de curadoria, e contato. layout responsivo em blocos como no print." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://example.com/about/" />
 
-<!-- Open Graph / Twitter -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="About — Kaique Oliveira" />
-<meta property="og:description" content="sobre o projeto, filosofia de curadoria, e contato. layout responsivo em blocos como no print." />
-<meta property="og:url" content="https://example.com/about/" />
-<meta property="og:image" content="https://example.com/assets/img/portrait.svg" />
-<meta name="twitter:card" content="summary_large_image" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About — Kaique Oliveira" />
+  <meta property="og:description"
+    content="sobre o projeto, filosofia de curadoria, e contato. layout responsivo em blocos como no print." />
+  <meta property="og:url" content="https://example.com/about/" />
+  <meta property="og:image" content="https://example.com/assets/img/portrait.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="../assets/css/styles.css" />
-<script>document.documentElement.classList.add('no-js');</script>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>document.documentElement.classList.add('no-js');</script>
 
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "AboutPage",
@@ -35,107 +38,116 @@
 }
 </script>
 
-<title>About — Kaique Oliveira</title>
+  <title>About — Kaique Oliveira</title>
 </head>
 
 <body id="top">
-<a class="skip-link" href="#content">pular pro conteudo</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="../index.html" aria-label="Kaique Oliveira - início">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span class="brand-name">Grain <span>Archive</span></span>
-    </a>
-
-    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
-      menu
-    </button>
-
-    <nav id="primary-nav" class="nav" data-nav aria-label="navegação principal">
-      <a class="pill--orange" href="../index.html">inicio</a>
-      <a class="pill--green" href="../archive/index.html">archive</a>
-      <a class="pill--blue" href="../about/index.html">about</a>
-    </nav>
+  <!-- Background Effects -->
+  <div class="bg-anim" aria-hidden="true">
+    <div class="glow glow--1"></div>
+    <div class="glow glow--2"></div>
   </div>
-</header>
 
-<main id="content" class="section">
-  <div class="container">
-    <p class="breadcrumb"><a href="../index.html">inicio</a> / <strong>about</strong></p>
-    <h1 class="section-title" style="margin-top: var(--s-2);">About</h1>
-    <p class="section-sub">
-      Kaique Oliveira é um lugar pra guardar e reencontrar: musica, cinema, texto. curadoria com foco em textura e memória.
-      tudo pensado pra leitura rápida e navegação calma.
-    </p>
+  <a class="skip-link" href="#content">pular pro conteudo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-logo" href="../index.html" aria-label="Kaique Oli - início">
+        Kaique Oli
+      </a>
+      <nav id="primary-nav" class="nav" aria-label="navegação principal">
+        <a href="../index.html">home</a>
+        <a href="index.html">sobre</a>
+        <a href="index.html#contato">contatos</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="about-grid">
-      <div class="avatar">
-        <img src="../assets/img/portrait.svg" alt="retrato ilustrativo (placeholder)" loading="lazy" decoding="async" />
+  <main id="content" class="section reveal">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">inicio</a> / <strong>about</strong></p>
+      <h1 class="section-title" style="margin-top: var(--s-2);">About</h1>
+      <p class="section-sub">
+        Kaique Oliveira é um lugar pra guardar e reencontrar: musica, cinema, texto. curadoria com foco em textura e
+        memória.
+        tudo pensado pra leitura rápida e navegação calma.
+      </p>
+
+      <div class="about-grid">
+        <div class="avatar">
+          <img src="../assets/img/portrait.svg" alt="retrato ilustrativo (placeholder)" loading="lazy"
+            decoding="async" />
+        </div>
+
+        <section class="about-card" aria-label="manifesto">
+          <h2 class="section-title" style="font-size: clamp(22px, 2.2vw, 34px); margin-top: 0;">manifesto</h2>
+          <p>
+            esse site foi montado pra bater com os prints: fundo escuro, tipografia grande, cards com imagem dominante
+            e chamadas laranjas pra ação. a ux aqui prioriza:
+          </p>
+
+          <ul>
+            <li><strong>tap targets</strong> grandes em mobile (sem link minúsculo)</li>
+            <li><strong>hierarquia</strong> clara: títulos grandes, metadados como “eyebrow”</li>
+            <li><strong>acessibilidade</strong>: skip link, foco visível, contraste e sem animação obrigatória</li>
+            <li><strong>seo</strong>: html semântico + json-ld + conteúdo renderizado no servidor (estático)</li>
+          </ul>
+
+          <h3 style="margin-top: var(--s-3);">stack</h3>
+          <p style="color: var(--muted); margin-top: 6px;">
+            html + css (grid/columns) + js vanilla. sem dependência externa e sem build.
+          </p>
+
+          <div id="contato" class="cta" style="margin-top: var(--s-4);">
+            <div class="cta-inner">
+              <h2 class="cta-title" style="margin:0;">turn into the original</h2>
+              <p class="cta-sub" style="margin:0;">quer receber a curadoria? manda um oi.</p>
+              <a class="btn" href="mailto:contato@example.com">contato por email</a>
+              <p style="margin: 0; color: rgba(0,0,0,.75); font-weight:700;">
+                troca o e-mail acima pelo teu (seo: use mailto com domínio real).
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
 
-      <section class="about-card" aria-label="manifesto">
-        <h2 class="section-title" style="font-size: clamp(22px, 2.2vw, 34px); margin-top: 0;">manifesto</h2>
-        <p>
-          esse site foi montado pra bater com os prints: fundo escuro, tipografia grande, cards com imagem dominante
-          e chamadas laranjas pra ação. a ux aqui prioriza:
-        </p>
-
-        <ul>
-          <li><strong>tap targets</strong> grandes em mobile (sem link minúsculo)</li>
-          <li><strong>hierarquia</strong> clara: títulos grandes, metadados como “eyebrow”</li>
-          <li><strong>acessibilidade</strong>: skip link, foco visível, contraste e sem animação obrigatória</li>
-          <li><strong>seo</strong>: html semântico + json-ld + conteúdo renderizado no servidor (estático)</li>
-        </ul>
-
-        <h3 style="margin-top: var(--s-3);">stack</h3>
-        <p style="color: var(--muted); margin-top: 6px;">
-          html + css (grid/columns) + js vanilla. sem dependência externa e sem build.
-        </p>
-
-        <div id="contato" class="cta" style="margin-top: var(--s-4);">
-          <div class="cta-inner">
-            <h2 class="cta-title" style="margin:0;">turn into the original</h2>
-            <p class="cta-sub" style="margin:0;">quer receber a curadoria? manda um oi.</p>
-            <a class="btn" href="mailto:contato@example.com">contato por email</a>
-            <p style="margin: 0; color: rgba(0,0,0,.75); font-weight:700;">
-              troca o e-mail acima pelo teu (seo: use mailto com domínio real).
-            </p>
+      <section class="section" style="padding-bottom: 0;">
+        <div class="container" style="padding:0;">
+          <h2 class="section-title" style="font-size: clamp(22px, 2.2vw, 34px);">faq rapido</h2>
+          <div class="grid" style="grid-template-columns: 1fr; gap: var(--s-3);">
+            <div class="panel">
+              <div class="panel-title">como trocar as imagens?</div>
+              <p style="margin:0; color: var(--muted);">substitui os svgs em <code>assets/img</code> pelos teus jpg/webp
+                e atualiza os <code>alt</code>.</p>
+            </div>
+            <div class="panel">
+              <div class="panel-title">como adicionar posts no archive?</div>
+              <p style="margin:0; color: var(--muted);">duplica um card em <code>archive/index.html</code> e ajusta
+                <code>data-tags</code> e <code>data-haystack</code>.</p>
+            </div>
           </div>
         </div>
       </section>
     </div>
+  </main>
 
-    <section class="section" style="padding-bottom: 0;">
-      <div class="container" style="padding:0;">
-        <h2 class="section-title" style="font-size: clamp(22px, 2.2vw, 34px);">faq rapido</h2>
-        <div class="grid" style="grid-template-columns: 1fr; gap: var(--s-3);">
-          <div class="panel">
-            <div class="panel-title">como trocar as imagens?</div>
-            <p style="margin:0; color: var(--muted);">substitui os svgs em <code>assets/img</code> pelos teus jpg/webp e atualiza os <code>alt</code>.</p>
-          </div>
-          <div class="panel">
-            <div class="panel-title">como adicionar posts no archive?</div>
-            <p style="margin:0; color: var(--muted);">duplica um card em <code>archive/index.html</code> e ajusta <code>data-tags</code> e <code>data-haystack</code>.</p>
-          </div>
-        </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand-name" style="font-weight:900; letter-spacing:-0.04em;">Kaique Oli</div>
+        <div style="color:rgba(255,255,255,.45); margin-top:6px; font-size: 12px;">© <span data-year></span> — v1.0
+          design system . all rights reserved</div>
       </div>
-    </section>
-  </div>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div>
-      <div class="brand-name" style="font-weight:900; letter-spacing:-0.04em;">Kaique Oliveira</div>
-      <div style="color:rgba(255,255,255,.65); margin-top:6px;">© <span data-year></span> — curadoria, música e cinema</div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/kaique-oliveira-24b710269/">linkedin</a>
+        <a href="https://github.com/Kaique-o">github</a>
+        <a href="https://www.instagram.com/kaique__o">instagram</a>
+        <span>·</span>
+        <a href="/privacy">privacidade</a>
+        <a href="/cookies">cookies</a>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="../archive/index.html">archive</a>
-      <a href="../about/index.html">about</a>
-      <a href="#top">voltar ao topo</a>
-    </div>
-  </div>
-</footer>
-<script src="../assets/js/main.js" defer></script>
+  </footer>
+  <script src="../assets/js/main.js" defer></script>
 </body>
+
 </html>
