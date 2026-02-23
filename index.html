@@ -38,221 +38,95 @@
 </head>
 
 <body id="top">
+  <!-- Background Effects -->
+  <div class="bg-anim" aria-hidden="true">
+    <div class="glow glow--1"></div>
+    <div class="glow glow--2"></div>
+  </div>
+
   <a class="skip-link" href="#content">pular pro conteudo</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Kaique Oli - início">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-name">Kaique <span>Oli</span></span>
-      </a>
-
-      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
-        menu
-      </button>
-
-      <nav id="primary-nav" class="nav" data-nav aria-label="navegação principal">
-        <a class="pill--orange" href="index.html">inicio</a>
-        <a class="pill--green" href="archive/index.html">archive</a>
-        <a class="pill--blue" href="about/index.html">about</a>
+      <nav id="primary-nav" class="nav" aria-label="navegação principal">
+        <a href="index.html">home</a>
+        <a href="about/index.html">sobre</a>
+        <a href="about/index.html#contato">contatos</a>
       </nav>
     </div>
   </header>
 
   <main id="content">
-    <section class="hero" aria-label="capa">
-      <div class="hero-media" role="img" aria-label="fundo abstrato premium"></div>
-      <div class="container hero-inner">
-        <h1 class="hero-title">Hello world!</h1>
-        <p class="hero-sub">
-          Bem-vindo ao meu arquivo pessoal. Sou Kaique Oli, desenvolvedor focado em criar experiências digitais
-          memoráveis, minimalistas e eficientes.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn--primary" href="#links">explorar links</a>
-          <a class="btn btn--ghost" href="about/index.html">sobre mim</a>
-        </div>
+    <!-- Hero Section: Full-screen Video + Centered Logo -->
+    <section class="hero-video">
+      <video autoplay muted loop playsinline class="hero-bg-video">
+        <source
+          src="https://assets.mixkit.co/videos/preview/mixkit-abstract-glowing-particles-background-v2-1262-large.mp4"
+          type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-center-content">
+        <h1 class="logo-text">Kaique <span>Oli</span></h1>
       </div>
     </section>
 
-    <section id="links" class="section">
-      <div class="container">
-        <h2 class="section-title">links oficiais</h2>
-        <p class="section-sub">Onde me encontrar e o que ando produzindo — conteúdo, projetos e redes.</p>
-
-        <div class="links-hub">
-          <a href="https://kaiqueoli.com/" class="link-card">
-            <div class="link-card-body">
-              <h3>site oficial</h3>
-              <p>sobre mim e projetos</p>
-            </div>
-            <span class="link-arrow">→</span>
-          </a>
-          <a href="https://blog.kaiqueoli.com/" class="link-card">
-            <div class="link-card-body">
-              <h3>blog</h3>
-              <p>artigos, notas e bastidores</p>
-            </div>
-            <span class="link-arrow">→</span>
-          </a>
-          <a href="https://www.linkedin.com/in/kaique-oliveira-24b710269/" class="link-card">
-            <div class="link-card-body">
-              <h3>linkedin</h3>
-              <p>carreira e networking</p>
-            </div>
-            <span class="link-arrow">→</span>
-          </a>
-          <a href="https://github.com/Kaique-o" class="link-card">
-            <div class="link-card-body">
-              <h3>github</h3>
-              <p>código, repos e templates</p>
-            </div>
-            <span class="link-arrow">→</span>
-          </a>
-          <a href="https://www.youtube.com/@kaique-olive" class="link-card">
-            <div class="link-card-body">
-              <h3>youtube</h3>
-              <p>vídeos e tutoriais</p>
-            </div>
-            <span class="link-arrow">→</span>
-          </a>
-        </div>
+    <!-- Photo Grid: 2x2 Full Screen -->
+    <section class="photo-grid-section">
+      <div class="grid-2x2">
+        <div class="grid-item"><img
+            src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1000"
+            alt="Photo 1"></div>
+        <div class="grid-item"><img
+            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1000"
+            alt="Photo 2"></div>
+        <div class="grid-item"><img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000"
+            alt="Photo 3"></div>
+        <div class="grid-item"><img
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000"
+            alt="Photo 4"></div>
+      </div>
+      <div class="container section-footer-actions">
+        <a href="archive/index.html" class="btn btn--glass">saiba mais</a>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="featured-album">
-      <div class="container">
-        <h2 id="featured-album" class="section-title">featured album</h2>
-        <p class="section-sub">um bloco grande, do jeito que o print sugere: capa forte + dados objetivos + tracklist
-          legível.</p>
-
-        <div class="featured">
-          <div class="album-cover">
-            <img src="assets/img/cover-featured.svg" alt="capa do álbum False Memory (placeholder)" loading="lazy"
-              decoding="async" />
-          </div>
-
-          <div class="album-meta">
-            <h3 class="album-title">False Memory</h3>
-            <div class="meta-row" aria-label="metadados do álbum">
-              <span class="tag tag--green">selo</span>
-              <span>grain archive tapes</span>
-              <span>·</span>
-              <span>formato: digital / vinil</span>
-              <span>·</span>
-              <span>duracao: 41:22</span>
-            </div>
-
-            <div class="tracklist" aria-label="tracklist">
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col">faixa</th>
-                    <th scope="col">titulo</th>
-                    <th scope="col">tempo</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>01</td>
-                    <td>dial tone</td>
-                    <td>04:12</td>
-                  </tr>
-                  <tr>
-                    <td>02</td>
-                    <td>fuzz prayer</td>
-                    <td>05:48</td>
-                  </tr>
-                  <tr>
-                    <td>03</td>
-                    <td>room tone</td>
-                    <td>06:03</td>
-                  </tr>
-                  <tr>
-                    <td>04</td>
-                    <td>afterimage</td>
-                    <td>03:57</td>
-                  </tr>
-                  <tr>
-                    <td>05</td>
-                    <td>false memory</td>
-                    <td>06:22</td>
-                  </tr>
-                  <tr>
-                    <td>06</td>
-                    <td>rewind hymn</td>
-                    <td>05:00</td>
-                  </tr>
-                  <tr>
-                    <td>07</td>
-                    <td>ghost chorus</td>
-                    <td>10:00</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div style="margin-top: var(--s-3); display:flex; gap: 12px; flex-wrap:wrap;">
-              <a class="btn btn--primary" href="archive/index.html#albums">ver no archive</a>
-              <a class="btn" href="archive/index.html#albums">mais albums</a>
-            </div>
-
-            <p class="note" style="margin-top: var(--s-3);">
-              dica ux: tracklist usa numeros tabulares, linhas leves e espaçamento consistente pra leitura rapida.
-            </p>
-          </div>
-        </div>
+    <!-- Featured Article: Full Screen -->
+    <section class="featured-article-fs">
+      <div class="article-fs-bg"
+        style="background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=2000');">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container article-fs-content">
+        <span class="eyebrow">mais novo artigo</span>
+        <h2 class="title">Drowning in Delay: The Revival of Fuzz Worship</h2>
+        <p class="excerpt">Uma olhada técnica e sentimental no retorno do delay e do fuzz — e porque isso soa como
+          memória em fita.</p>
+        <a href="article/drowning-in-delay-the-revival-of-fuzz-worship/index.html" class="btn btn--primary">leia-me</a>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="cinema-selects">
-      <div class="container">
-        <h2 id="cinema-selects" class="section-title">cinema selects</h2>
-        <p class="section-sub">tabela limpa em fundo claro/escuro, como no print. clicavel e facil de escanear.</p>
-
-        <div class="cinema" role="region" aria-label="lista de cinema">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">titulo</th>
-                <th scope="col">ano</th>
-                <th scope="col">nota</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="archive/index.html#cinema">stalker</a></td>
-                <td>1979</td>
-                <td>ritmo hipnótico, textura</td>
-              </tr>
-              <tr>
-                <td><a href="archive/index.html#cinema">under the skin</a></td>
-                <td>2013</td>
-                <td>sound design, vazio</td>
-              </tr>
-              <tr>
-                <td><a href="archive/index.html#cinema">the lighthouse</a></td>
-                <td>2019</td>
-                <td>grão, ruído, obsessão</td>
-              </tr>
-              <tr>
-                <td><a href="archive/index.html#cinema">fallen angels</a></td>
-                <td>1995</td>
-                <td>neon + silêncio</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
+    <!-- Recent Content List -->
     <section class="section">
       <div class="container">
-        <div class="cta" role="region" aria-label="call to action">
+        <h2 class="section-title">publicações recentes</h2>
+        <div class="recent-list">
+          <a href="#" class="recent-item">
+            <span class="date">ago 2025</span>
+            <span class="item-title">False Memory: An Ambient Journey</span>
+            <span class="category">music</span>
+          </a>
+          <a href="#" class="recent-item">
+            <span class="date">jul 2025</span>
+            <span class="item-title">The Gritty Aesthetic of 95' Neon</span>
+            <span class="category">cinema</span>
+          </a>
+        </div>
+
+        <div class="contact-banner" style="margin-top: 80px;">
           <div class="cta-inner">
-            <h2 class="cta-title">turn into the original</h2>
-            <p class="cta-sub">assine a lista. 1 e-mail por semana, só o que vale entrar no arquivo.</p>
-            <a class="btn" href="about/index.html#contato">assinar</a>
+            <h2 class="cta-title">contate-me</h2>
+            <p class="cta-sub">Tem algum projeto em mente ou quer apenas bater um papo? Estou à disposição.</p>
+            <a class="btn btn--glass" href="about/index.html#contato">vamos conversar</a>
           </div>
         </div>
       </div>
@@ -263,13 +137,16 @@
     <div class="container footer-inner">
       <div>
         <div class="brand-name" style="font-weight:900; letter-spacing:-0.04em;">Kaique Oli</div>
-        <div style="color:rgba(255,255,255,.65); margin-top:6px;">© <span data-year></span> — Desenvolvedor & Criador de
-          Conteúdo</div>
+        <div style="color:rgba(255,255,255,.45); margin-top:6px; font-size: 12px;">© <span data-year></span> — v1.0
+          design system . all rights reserved</div>
       </div>
       <div class="footer-links">
-        <a href="archive/index.html">archive</a>
-        <a href="about/index.html">about</a>
-        <a href="#top">voltar ao topo</a>
+        <a href="https://www.linkedin.com/in/kaique-oliveira-24b710269/">linkedin</a>
+        <a href="https://github.com/Kaique-o">github</a>
+        <a href="https://www.instagram.com/kaique__o">instagram</a>
+        <span>·</span>
+        <a href="/privacy">privacidade</a>
+        <a href="/cookies">cookies</a>
       </div>
     </div>
   </footer>
